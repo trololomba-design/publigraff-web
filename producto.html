@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Producto — PubliGraff</title>
+<meta name="description" content="Modelos, medidas y precios referenciales. Cotiza por WhatsApp o correo con PubliGraff, imprenta en San Joaquín.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-pagina="producto">
+
+<div data-header></div>
+
+<main>
+
+  <!-- Se llena desde js/main.js con los datos de js/datos.js -->
+  <div class="contenedor ficha-vacia" data-no-encontrado hidden>
+    <h1>No encontramos ese producto</h1>
+    <p>Puede que el enlace esté incompleto. Revisa todos nuestros productos o escríbenos directamente.</p>
+    <a class="btn btn--marca" href="productos.html">Ver productos</a>
+  </div>
+
+  <section class="ficha" data-ficha hidden>
+    <div class="contenedor">
+      <nav class="migas" aria-label="Ruta">
+        <a href="index.html">Inicio</a><span aria-hidden="true">/</span>
+        <a href="productos.html">Productos</a><span aria-hidden="true">/</span>
+        <a href="#" data-miga-categoria></a><span aria-hidden="true">/</span>
+        <span data-miga-producto></span>
+      </nav>
+
+      <div class="ficha__top">
+        <div class="galeria entra">
+          <div class="galeria__principal">
+            <img data-galeria-principal src="" alt="">
+          </div>
+          <div class="galeria__miniaturas" data-galeria-miniaturas></div>
+        </div>
+
+        <div class="ficha__info">
+          <h1 class="ficha__titulo entra" style="--d:1" data-titulo></h1>
+          <p class="ficha__desc entra" style="--d:2" data-descripcion></p>
+          <ul class="ficha__caracteristicas entra" style="--d:3" data-caracteristicas></ul>
+          <div class="ficha__caja entra" style="--d:4">
+            <p class="ficha__desde" data-desde></p>
+            <div class="ficha__acciones">
+              <a class="btn btn--marca btn--grande" href="#modelos">Ver modelos y precios <span class="btn__flecha btn__flecha--abajo" aria-hidden="true">↓</span></a>
+              <a class="btn btn--wapp btn--grande" data-wapp-producto href="#">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5a.6.6 0 0 0 0-.5l-1-2.2c-.2-.6-.4-.5-.6-.5h-.6a1 1 0 0 0-.8.4A3.3 3.3 0 0 0 5.7 9c0 1.5 1 2.9 1.2 3.1s2.1 3.3 5.2 4.6c2.6 1 3.2.8 3.8.8s1.8-.7 2-1.5.3-1.4.2-1.5-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+                Preguntar por WhatsApp
+              </a>
+            </div>
+            <ul class="ficha__garantias">
+              <li>Diseño gratis</li>
+              <li>Despacho a todo Chile</li>
+              <li>Cotización sin compromiso</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--gris" id="modelos" data-seccion-modelos hidden>
+    <div class="contenedor">
+      <header class="seccion__head reveal">
+        <p class="eyebrow">Elige tu modelo</p>
+        <h2 class="seccion__titulo">Modelos disponibles</h2>
+        <p class="seccion__sub">Elige el modelo y la cantidad y agrégalo a tu cotización. Puedes sumar varios productos y enviarlos todos juntos.</p>
+      </header>
+      <div class="grid-modelos" data-modelos></div>
+      <p class="nota-precios" data-nota-precios></p>
+    </div>
+  </section>
+
+  <section class="seccion" data-seccion-relacionados hidden>
+    <div class="contenedor">
+      <header class="seccion__head seccion__head--fila reveal">
+        <h2 class="seccion__titulo seccion__titulo--chico">También te puede interesar</h2>
+        <a class="enlace-flecha" href="productos.html">Ver catálogo <span aria-hidden="true">→</span></a>
+      </header>
+      <div class="grid-productos grid-productos--relacionados" data-relacionados></div>
+    </div>
+  </section>
+
+</main>
+
+<div data-footer></div>
+
+<script src="js/datos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PubliGraff — Imprenta en San Joaquín · Bolsas, saquitos, imanes y más</title>
+<meta name="description" content="Imprenta en San Joaquín, Santiago. Saquitos de papel, bolsas, individuales, papel antigrasa, imanes, stickers, tazones y ropa corporativa con tu logo. Diseño gratis y despacho a todo Chile.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PubliGraff — Impresos personalizados para tu negocio">
+<meta property="og:description" content="Revisa modelos y precios y cotiza por WhatsApp o correo. Diseño gratis y despacho a todo Chile.">
+<meta property="og:image" content="imagenes/productos/saquitos-modelos.jpg">
+<meta property="og:locale" content="es_CL">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-pagina="inicio">
+
+<div data-header></div>
+
+<main>
+
+<!-- ══════════════════════════════════════ HERO -->
+<section class="hero">
+  <div class="hero__deco" aria-hidden="true"><span></span><span></span></div>
+  <div class="contenedor hero__inner">
+    <div class="hero__texto">
+      <p class="eyebrow entra" style="--d:0">Imprenta en San Joaquín · Desde 2010</p>
+      <h1 class="hero__titulo entra" style="--d:1">Tu marca impresa en <span class="resaltado">todo lo que entregas</span></h1>
+      <p class="hero__desc entra" style="--d:2">
+        Bolsas, saquitos, envases, imanes, tazones y ropa con tu logo.
+        Revisa modelos y precios, arma tu lista y cotiza por WhatsApp o correo.
+      </p>
+
+      <form class="buscador entra" style="--d:3" role="search" action="productos.html" method="get">
+        <label class="sr-only" for="buscar">¿Qué necesitas imprimir?</label>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="buscar" name="q" type="search" placeholder="¿Qué necesitas? Ej: saquitos, imanes, tazones…" autocomplete="off">
+        <button class="btn btn--marca" type="submit">Buscar</button>
+      </form>
+
+      <div class="hero__acciones entra" style="--d:4">
+        <a class="btn btn--marca btn--grande" href="productos.html">Ver catálogo <span class="btn__flecha" aria-hidden="true">→</span></a>
+        <a class="btn btn--wapp btn--grande" data-wapp href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5a.6.6 0 0 0 0-.5l-1-2.2c-.2-.6-.4-.5-.6-.5h-.6a1 1 0 0 0-.8.4A3.3 3.3 0 0 0 5.7 9c0 1.5 1 2.9 1.2 3.1s2.1 3.3 5.2 4.6c2.6 1 3.2.8 3.8.8s1.8-.7 2-1.5.3-1.4.2-1.5-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+          Cotizar por WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__mosaico entra" style="--d:2" data-mosaico aria-hidden="true">
+      <img src="imagenes/productos/saquitos-foto.jpg" alt="">
+      <img src="imagenes/productos/bolsas-manilla-modelos.jpg" alt="">
+      <img src="imagenes/productos/polerones-impresos-2.jpg" alt="">
+      <img src="imagenes/productos/atril-4.jpg" alt="">
+      <div class="hero__sello">
+        <strong>Diseño<br>gratis</strong>
+        <span>en todos los pedidos</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ FRANJA EN MOVIMIENTO -->
+<div class="cinta" aria-label="Beneficios">
+  <div class="cinta__pista">
+    <span>Diseño gratis</span><span>Despacho a todo Chile</span><span>Taller propio en San Joaquín</span><span>+15 años de experiencia</span><span>Pedidos desde 100 unidades</span><span>Cotización sin compromiso</span>
+    <span aria-hidden="true">Diseño gratis</span><span aria-hidden="true">Despacho a todo Chile</span><span aria-hidden="true">Taller propio en San Joaquín</span><span aria-hidden="true">+15 años de experiencia</span><span aria-hidden="true">Pedidos desde 100 unidades</span><span aria-hidden="true">Cotización sin compromiso</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════ CATEGORÍAS -->
+<section class="seccion" aria-labelledby="t-categorias">
+  <div class="contenedor">
+    <header class="seccion__head seccion__head--fila reveal">
+      <div>
+        <p class="eyebrow">Catálogo</p>
+        <h2 class="seccion__titulo" id="t-categorias">¿Qué necesitas imprimir?</h2>
+      </div>
+      <a class="enlace-flecha" href="productos.html">Ver todos los productos <span aria-hidden="true">→</span></a>
+    </header>
+    <div class="grid-categorias" data-categorias></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ DESTACADOS -->
+<section class="seccion seccion--gris" aria-labelledby="t-destacados">
+  <div class="contenedor">
+    <header class="seccion__head seccion__head--fila reveal">
+      <div>
+        <p class="eyebrow">Lo más pedido</p>
+        <h2 class="seccion__titulo" id="t-destacados">Productos destacados</h2>
+      </div>
+      <a class="enlace-flecha" href="productos.html">Ver catálogo completo <span aria-hidden="true">→</span></a>
+    </header>
+    <div class="grid-productos" data-destacados></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ CIFRAS -->
+<section class="cifras" aria-label="PubliGraff en números">
+  <div class="contenedor cifras__inner">
+    <div class="cifra reveal"><strong data-contar="15" data-prefijo="+">+15</strong><span>años imprimiendo</span></div>
+    <div class="cifra reveal"><strong data-contar-productos>18</strong><span>productos personalizables</span></div>
+    <div class="cifra reveal"><strong data-contar="100" data-sufijo="%">100%</strong><span>diseño gratis</span></div>
+    <div class="cifra reveal"><strong>Todo Chile</strong><span>con despacho</span></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ CÓMO TRABAJAMOS -->
+<section class="seccion" aria-labelledby="t-proceso">
+  <div class="contenedor">
+    <header class="seccion__head reveal">
+      <p class="eyebrow">Así de simple</p>
+      <h2 class="seccion__titulo" id="t-proceso">Cómo trabajamos</h2>
+    </header>
+    <ol class="pasos">
+      <li class="paso reveal">
+        <span class="paso__num">1</span>
+        <h3 class="paso__titulo">Arma tu lista</h3>
+        <p>Elige productos, modelos y cantidades, o simplemente escríbenos qué necesitas.</p>
+      </li>
+      <li class="paso reveal">
+        <span class="paso__num">2</span>
+        <h3 class="paso__titulo">Te cotizamos</h3>
+        <p>Te confirmamos precio y plazo de entrega por WhatsApp o correo. Sin compromiso.</p>
+      </li>
+      <li class="paso reveal">
+        <span class="paso__num">3</span>
+        <h3 class="paso__titulo">Diseñamos gratis</h3>
+        <p>Preparamos el diseño con tu logo y lo ajustamos hasta que lo apruebes.</p>
+      </li>
+      <li class="paso reveal">
+        <span class="paso__num">4</span>
+        <h3 class="paso__titulo">Imprimimos y entregamos</h3>
+        <p>Retiras en San Joaquín o te lo despachamos a cualquier ciudad de Chile.</p>
+      </li>
+    </ol>
+    <p class="centro reveal"><a class="enlace-flecha" href="nosotros.html">Conoce nuestro taller <span aria-hidden="true">→</span></a></p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ LÍNEA ECOLÓGICA -->
+<section class="seccion seccion--eco" aria-labelledby="t-eco">
+  <div class="contenedor ecologica">
+    <img class="ecologica__logo reveal" src="imagenes/logos/logo-cualestubolsa.png" alt="Logo de Cual es Tu Bolsa, línea ecológica de PubliGraff" width="525" height="475">
+    <div class="reveal">
+      <p class="eyebrow">Línea ecológica</p>
+      <h2 class="seccion__titulo" id="t-eco">Cual es Tu Bolsa</h2>
+      <p class="ecologica__desc">Empaques de papel y bolsas reutilizables para negocios que quieren dejar de usar bolsas de un solo uso, sin perder la imagen de su marca.</p>
+      <a class="btn btn--marca" href="productos.html?cat=ecologico">Ver productos ecológicos <span class="btn__flecha" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ LLAMADO FINAL -->
+<section class="llamado">
+  <div class="contenedor llamado__inner reveal">
+    <div>
+      <h2>¿Tienes un pedido en mente?</h2>
+      <p>Cuéntanos qué necesitas y te respondemos con precio y plazo. El diseño va por nuestra cuenta.</p>
+    </div>
+    <div class="llamado__acciones">
+      <a class="btn btn--blanco btn--grande" data-wapp href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5a.6.6 0 0 0 0-.5l-1-2.2c-.2-.6-.4-.5-.6-.5h-.6a1 1 0 0 0-.8.4A3.3 3.3 0 0 0 5.7 9c0 1.5 1 2.9 1.2 3.1s2.1 3.3 5.2 4.6c2.6 1 3.2.8 3.8.8s1.8-.7 2-1.5.3-1.4.2-1.5-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+        Escribir por WhatsApp
+      </a>
+      <a class="btn btn--borde-blanco btn--grande" href="contacto.html">Ir al formulario</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div data-footer></div>
+
+<script src="js/datos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

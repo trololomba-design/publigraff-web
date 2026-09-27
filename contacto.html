@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — PubliGraff</title>
+<meta name="description" content="Cotiza con PubliGraff por WhatsApp o correo. Imprenta en San Joaquín, Santiago, con despacho a todo Chile.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-pagina="contacto">
+
+<div data-header></div>
+
+<main>
+  <section class="cabecera">
+    <div class="contenedor">
+      <nav class="migas" aria-label="Ruta">
+        <a href="index.html">Inicio</a><span aria-hidden="true">/</span><span>Contacto</span>
+      </nav>
+      <h1 class="cabecera__titulo entra">Pide tu cotización</h1>
+      <p class="cabecera__desc entra" style="--d:1">Escríbenos por el medio que prefieras. Cuéntanos qué necesitas, la cantidad y para cuándo.</p>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor contacto">
+      <div class="contacto__info">
+        <a class="canal canal--wapp reveal" data-wapp href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5a.6.6 0 0 0 0-.5l-1-2.2c-.2-.6-.4-.5-.6-.5h-.6a1 1 0 0 0-.8.4A3.3 3.3 0 0 0 5.7 9c0 1.5 1 2.9 1.2 3.1s2.1 3.3 5.2 4.6c2.6 1 3.2.8 3.8.8s1.8-.7 2-1.5.3-1.4.2-1.5-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+          <span><strong>WhatsApp</strong><span data-dato="whatsappVisible"></span></span>
+          <span class="canal__flecha" aria-hidden="true">→</span>
+        </a>
+        <a class="canal reveal" data-mail href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          <span><strong>Correo</strong><span data-dato="correo"></span></span>
+          <span class="canal__flecha" aria-hidden="true">→</span>
+        </a>
+        <div class="canal canal--info reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span><strong>Taller</strong><span data-dato="direccion"></span></span>
+        </div>
+        <div class="canal canal--info reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span><strong>Horario</strong><span data-dato="horario"></span></span>
+        </div>
+      </div>
+
+      <form class="formulario reveal" data-formulario novalidate>
+        <h2 class="formulario__titulo">Cuéntanos qué necesitas</h2>
+        <div class="campo">
+          <label for="f-nombre">Nombre</label>
+          <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
+        </div>
+        <div class="campo-fila">
+          <div class="campo">
+            <label for="f-negocio">Negocio <span class="opcional">(opcional)</span></label>
+            <input id="f-negocio" name="negocio" type="text" autocomplete="organization">
+          </div>
+          <div class="campo">
+            <label for="f-comuna">Comuna / ciudad</label>
+            <input id="f-comuna" name="comuna" type="text" autocomplete="address-level2">
+          </div>
+        </div>
+        <div class="campo-fila">
+          <div class="campo">
+            <label for="f-producto">Producto</label>
+            <select id="f-producto" name="producto" data-select-productos></select>
+          </div>
+          <div class="campo">
+            <label for="f-cantidad">Cantidad aprox.</label>
+            <input id="f-cantidad" name="cantidad" type="text" inputmode="numeric" placeholder="Ej: 1.000">
+          </div>
+        </div>
+        <div class="campo">
+          <label for="f-mensaje">Detalles <span class="opcional">(opcional)</span></label>
+          <textarea id="f-mensaje" name="mensaje" rows="4" placeholder="Medidas, colores, para cuándo lo necesitas…"></textarea>
+        </div>
+        <p class="formulario__error" data-error hidden>Escribe tu nombre para continuar.</p>
+        <div class="formulario__acciones">
+          <button type="submit" class="btn btn--wapp" data-via="whatsapp">Enviar por WhatsApp</button>
+          <button type="submit" class="btn btn--outline" data-via="correo">Enviar por correo</button>
+        </div>
+        <p class="formulario__nota">Se abrirá WhatsApp o tu correo con el mensaje listo para enviar.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div data-footer></div>
+
+<script src="js/datos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

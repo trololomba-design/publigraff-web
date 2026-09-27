@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Productos — PubliGraff</title>
+<meta name="description" content="Catálogo de PubliGraff: saquitos, bolsas, individuales, papel antigrasa, imanes, stickers, tazones, agendas y ropa corporativa con tu logo. Revisa modelos y precios.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-pagina="productos">
+
+<div data-header></div>
+
+<main>
+  <section class="cabecera">
+    <div class="contenedor">
+      <nav class="migas" aria-label="Ruta">
+        <a href="index.html">Inicio</a><span aria-hidden="true">/</span>
+        <a href="productos.html">Productos</a><span aria-hidden="true">/</span>
+        <span data-miga-cat>Todos</span>
+      </nav>
+      <h1 class="cabecera__titulo entra" data-cat-titulo>Todos los productos</h1>
+      <p class="cabecera__desc entra" style="--d:1" data-cat-desc></p>
+    </div>
+  </section>
+
+  <section class="seccion seccion--catalogo">
+    <div class="contenedor catalogo">
+
+      <aside class="lado" aria-label="Categorías">
+        <h2 class="lado__titulo">Categorías</h2>
+        <div class="lado__lista" role="group" data-categorias-lado></div>
+        <div class="lado__ayuda">
+          <strong>¿No sabes qué elegir?</strong>
+          <p>Cuéntanos qué vendes y te recomendamos.</p>
+          <a class="btn btn--wapp btn--bloque" data-wapp data-texto="Hola, necesito ayuda para elegir productos impresos para mi negocio." href="#">Pedir ayuda</a>
+        </div>
+      </aside>
+
+      <div class="catalogo__main">
+        <div class="herramientas">
+          <form class="buscador buscador--chico" role="search" data-form-catalogo>
+            <label class="sr-only" for="buscar-catalogo">Buscar en el catálogo</label>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="buscar-catalogo" type="search" placeholder="Buscar producto…" autocomplete="off" data-buscar-catalogo>
+          </form>
+          <label class="orden">
+            <span>Ordenar</span>
+            <select data-orden>
+              <option value="relevancia">Recomendados</option>
+              <option value="precio">Menor precio</option>
+              <option value="nombre">Nombre (A-Z)</option>
+            </select>
+          </label>
+        </div>
+        <p class="resultado" data-resultado aria-live="polite"></p>
+        <div class="grid-productos grid-productos--catalogo" data-grid></div>
+
+        <div class="aviso-medida reveal">
+          <div>
+            <strong>¿No encuentras lo que buscas?</strong>
+            <p>Si se puede imprimir, probablemente lo hacemos. Cuéntanos tu idea y te cotizamos.</p>
+          </div>
+          <a class="btn btn--outline" data-wapp data-texto="Hola, quiero cotizar un producto que no vi en la web: " href="#">Consultar por WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<div data-footer></div>
+
+<script src="js/datos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

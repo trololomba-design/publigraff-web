@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Imagen próximamente">
+  <rect width="600" height="600" fill="#e6f4ec"/>
+  <g fill="none" stroke="#009038" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity="0.55">
+    <rect x="170" y="150" width="260" height="220" rx="18"/>
+    <path d="M170 300 L245 235 L310 290 L365 250 L430 305"/>
+    <circle cx="360" cy="205" r="24"/>
+    <path d="M210 430 h180 M240 470 h120"/>
+  </g>
+  <text x="300" y="530" text-anchor="middle" font-family="'Plus Jakarta Sans','Segoe UI',sans-serif" font-size="34" font-weight="700" fill="#00732d" opacity="0.85">Próximamente</text>
+</svg>

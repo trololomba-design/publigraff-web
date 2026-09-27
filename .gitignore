@@ -1,0 +1,10 @@
+# Archivos que NO se publican en la web
+publicgraff-web.7z
+_archivo-originales/
+_respaldo-version-anterior/
+videos/taller-impresion-1.mp4
+
+# Archivos de sistema
+Thumbs.db
+desktop.ini
+.DS_Store
